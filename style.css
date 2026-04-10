@@ -2,3 +2,10 @@ img {
   width: 300px;
   height: auto; /* Mantém a proporção */
 }
+
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  height: 100vh;          /* Opcional: define altura total da tela */
+}
