@@ -3,7 +3,7 @@ img {
   height: auto; /* Mantém a proporção */
 }
 
-.container { roncador.jpeg
+.container {
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center;    /* Centraliza verticalmente */
