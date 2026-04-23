@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <style>
-        /* Remove margens padrão do navegador para evitar barras de rolagem */
-        body, html {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;           /* Ativa o Flexbox */
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center;     /* Centraliza verticalmente */
-            height: 100vh;           /* Faz o container ter a altura total da tela */
-            background-color: #f0f0f0; /* Apenas para visualização */
-        }
-
-        img {
-            width: 300px;
-            height: auto;            /* Mantém a proporção da imagem */
-            border-radius: 8px;      /* Estética opcional */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/300" alt="Sua Imagem">
-    </div>
-
-</body>
-</html>
+.container {
+  display: grid;
+  place-items: center; /* Centraliza nos dois eixos de uma vez só */
+  height: 100vh;
+}
