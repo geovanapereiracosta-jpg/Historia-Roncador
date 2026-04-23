@@ -1,5 +1,14 @@
 .container {
-  display: grid;
-  place-items: center; /* Centraliza nos dois eixos de uma vez só */
+  display: flex;
+  flex-direction: column; /* Faz a imagem e o texto ficarem um sobre o outro */
+  justify-content: center;
+  align-items: center;   
   height: 100vh;
+  text-align: justify;    /* Justifica o texto */
+  padding: 20px;          /* Evita que o texto encoste nas bordas da tela */
+}
+
+p {
+  max-width: 500px;       /* Limita a largura para o efeito de "justificado" ficar bonito */
+  line-height: 1.6;       /* Melhora a leitura do texto justificado */
 }
