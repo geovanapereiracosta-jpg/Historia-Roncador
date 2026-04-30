@@ -1,4 +1,31 @@
-   h1 {
-   text-align: center;
-   }
+<style>
+  /* Configurações gerais da página */
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif; /* Adicionei uma fonte mais legível */
+    margin: 20px;
+  }
 
+  /* Centralizando todos os títulos */
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  /* Configuração dos parágrafos */
+  p {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6; /* Dá um espaço entre as linhas para não cansar a vista */
+  }
+
+  /* O SEGREDO PARA CENTRALIZAR A IMAGEM */
+  img {
+    display: block;      /* Transforma a imagem em um bloco */
+    margin-left: auto;   /* Empurra a margem da esquerda até o meio */
+    margin-right: auto;  /* Empurra a margem da direita até o meio */
+    max-width: 100%;     /* Evita que a imagem fique maior que a tela do celular */
+    height: auto;        /* Mantém a proporção da foto */
+    border-radius: 10px; /* Opcional: deixa as bordas arredondadas e bonitas */
+  }
+</style>
