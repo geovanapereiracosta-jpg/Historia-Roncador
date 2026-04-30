@@ -29,3 +29,13 @@
     border-radius: 10px; /* Opcional: deixa as bordas arredondadas e bonitas */
   }
 </style>
+
+h1 {
+    text-align: center;
+    background-color: #d3d3d3; /* Cor cinza clara */
+    color: #333;               /* Cor da letra um pouco mais escura para dar contraste */
+    padding: 20px;             /* Espaço entre o texto e a borda do fundo */
+    border-radius: 8px;        /* Deixa as pontas do fundo arredondadas */
+    max-width: 600px;          /* Opcional: limita a largura da tarja cinza */
+    margin: 20px auto;         /* Centraliza o bloco do h1 na tela */
+}
