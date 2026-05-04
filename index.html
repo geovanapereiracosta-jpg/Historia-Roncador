@@ -11,7 +11,17 @@
             margin: 20px;
         }
 
-        h1, h2, h3 {
+        h1 {
+            text-align: center;
+            background-color: #d3d3d3; 
+            color: #333;               
+            padding: 20px;            
+            border-radius: 8px;       
+            max-width: 600px;          
+            margin: 20px auto;         
+        }
+
+        h2, h3 {
             text-align: center;
         }
 
@@ -19,19 +29,32 @@
             text-align: center;
             color: black;
             font-size: 18px;
+            max-width: 800px;
+            margin: 20px auto;
         }
 
         img {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
             max-width: 100%; 
             height: auto;
+            border-radius: 10px;
         }
 
+        /* Aplica o fundo cinza nas listas */
         ul, ol {
             max-width: 800px;
             margin: 20px auto;
+            background-color: #f2f2f2; /* Cinza claro */
+            padding: 30px 50px;       /* Espaçamento interno para não grudar no texto */
+            border-radius: 10px;      /* Bordas arredondadas para combinar com o layout */
+        }
+
+        /* Ajuste para as sublistas não acumularem fundo sobre fundo */
+        ul ul, ol ul {
+            background-color: transparent;
+            margin: 10px 0;
+            padding: 0 20px;
         }
     </style>
 </head>
@@ -39,26 +62,22 @@
 
     <h1>RONCADOR</h1>
 
-    <p>Por volta de 1920, uma comissão exploradora encarregada de demarcar a estrada que faria a ligação do Paraná ao Mato Grosso, instalou um acampamento onde hoje se localiza a sede do município de roncador. Com a derrubada das matas, foram surgindo as primeiras plantações, como também as criações de suínos.
-    Dizem os pioneiros que em uma noite chuvosa ouvia-se ao longe o barulho produzido pelas copas dos pinheiros, e também um forte ronco produzido por uma queda D água, o barulho era ouvido a km, e desta forma, denominaram o rio de Roncador e futuramente o nome da cidade passou a ser <strong><em>"RONCADOR".</em></strong>
-    </p>
+    <p>Por volta de 1920, uma comissão exploradora encarregada de demarcar a estrada que faria a ligação do Paraná ao Mato Grosso, instalou um acampamento onde hoje se localiza a sede do município de roncador. Com a derrubada das matas, foram surgindo as primeiras plantações, como também as criações de suínos.</p>
+    
+    <p>Dizem os pioneiros que em uma noite chuvosa ouvia-se ao longe o barulho produzido pelas copas dos pinheiros, e também um forte ronco produzido por uma queda D'água. O barulho era ouvido a quilômetros e, desta forma, denominaram o rio de Roncador e futuramente o nome da cidade passou a ser <strong><em>"RONCADOR".</em></strong></p>
 
-    <p>A colonização de Roncador, pode-se dizer, teve inicio , em 1923, com a chegada das primeiras famílias dos senhores João Mariano e Jorge Rodrigues Monteiro. Já, em 1927, chegou a família Mendes, em 1933, os Kovalek, e, em 1936, os Vogivoda.
-    Também, em 1927, foi construída a primeira estrada para carroças, empreitada com o Governador do Estado, Dr. Afonso Camargo. A partir daí, começaram a chegar mais famílias de diferentes regiões e estados.
-    O primeiro professor do município foi o Ser. Paulo Schner, e em 1944, foi nomeada a primeira professora, a Sra.Verônica Zola. Devido ao crescimento do vilarejo, em 1952, a congregaçãos das irmãs Servas da Imaculada Virgem Maria, descendentes de ucranianos sediados em Prudentópolis(PR), abriu uma escola, cuja construção contou com ajuda de toda população.
-    </p>
+    <p>A colonização de Roncador iniciou-se em 1923, com a chegada das primeiras famílias. Em 1927, foi construída a primeira estrada para carroças. Devido ao crescimento do vilarejo, em 1952, a congregação das irmãs Servas da Imaculada Virgem Maria abriu uma escola, cuja construção contou com ajuda de toda população.</p>
 
     <img src="roncador.jpeg" alt="Imagem de Roncador">
 
     <h2>Curiosidades sobre Roncador:</h2>
 
     <ul>
-        <li><strong>Origem e Primeiros Habitantes:</strong> A região já era frequentada por pessoas por volta de 1920, mas o povoamento efetivo começou mais tarde.</li>
-        <li><strong>Colonização (1923-1927):</strong> O início da colonização é datado de 1923. Em 1927, chegaram as primeiras famílias e foi aberta a primeira estrada para carroças.</li>
-        <li><strong>Nomeação de Professores:</strong> O primeiro professor da região foi Paulo Schneer. Em 1944, Verônica Zola foi nomeada a primeira professora.</li>
-        <li><strong>Educação e Comunidade:</strong> O desenvolvimento educacional teve um marco em 1952...</li>
-        <li><strong>Fundação/Emancipação:</strong> Roncador foi oficialmente fundada como município em 1960.</li>
-        <li><strong>População Atual:</strong> Atualmente, a cidade tem aproximadamente 11.300 habitantes.</li>
+        <li><strong>Origem e Primeiros Habitantes:</strong> A região já era frequentada por volta de 1920.</li>
+        <li><strong>Colonização (1923-1927):</strong> O início efetivo foi em 1923.</li>
+        <li><strong>Nomeação de Professores:</strong> Paulo Schneer foi o primeiro professor; Verônica Zola foi nomeada em 1944.</li>
+        <li><strong>Fundação/Emancipação:</strong> Oficialmente fundada como município em 1960.</li>
+        <li><strong>População Atual:</strong> Aproximadamente 11.300 habitantes.</li>
     </ul>
 
     <h3>O QUE FAZER EM RONCADOR?</h3>
@@ -66,31 +85,27 @@
     <ol>
         <li><strong>Natureza e Aventura:</strong>
             <ul>
-                <li>Cachoeiras: Visitar a Cachoeira do Sassá, Cachoeira do Rio Bonito e a Cachoeira do Roncador.</li>
-                <li>Caminhadas da Natureza: Participar dos eventos de trilhas e caminhadas que exploram o Rio Roncador e áreas de mata, como a 7ª Caminhada da Natureza.</li>
-                <li>Pedal dos Mestres: Trilha para bicicletas considerada uma das mais difíceis do estado.</li>
-                <li>Ronca Trilha: Grupo local de motociclistas que movimenta a região</li>
+                <li>Cachoeiras: Sassá, Rio Bonito e do Roncador.</li>
+                <li>Caminhadas da Natureza: Eventos que exploram o Rio Roncador.</li>
+                <li>Pedal dos Mestres: Trilha de bike de alta dificuldade.</li>
             </ul>
         </li>
         <li><strong>Lazer e Turismo Rural:</strong>
             <ul>
                 <li>Pousada Parque das Gabirobas e Lago Municipal.</li>
-                <li>Lago Municipal: Área revitalizada ideal para exercícios, caminhadas e lazer.</li>
-                <li>Capela do Faxinalzinho: Ponto de visitação cultural.</li>
-                <li>Turismo Religioso: Visitar a Igreja de São Pedro e São Nicolau na sede do município.</li>
+                <li>Turismo Religioso: Igreja de São Pedro e São Nicolau.</li>
             </ul>
         </li>
         <li><strong>Cultura e Gastronomia:</strong>
             <ul>
-                <li>Culinária Típica: Degustar o perohê (herança ucraniana).</li>
-                <li>Culinária Típica: Degustar o perohê ou vareneky, um prato típico de herança ucraniana.</il>
-                <li>Eventos: Acompanhar as celebrações do CTG e os eventos da Associação Vesná.</il>
-                <li>Museu Municipal: Conhecer a história local.</il>
+                <li>Culinária Típica: Degustar o <strong>perohê</strong> ou <strong>vareneky</strong> (herança ucraniana).</li>
+                <li>Eventos: Celebrações do CTG e Associação Vesná.</li>
             </ul>
         </li>
-        <li><strong>Onde Ficar e Comer (Destaques):</strong>
-                <li>Hospedagem: Novo Hotel e Pousada das Gabirobas.</il>
-                <li>Restaurantes: Maestá Wine Bar Bistrô (brasileira/italiana), Restaurante Santa Gula, e Churrascaria O Bistekão.</li>
+        <li><strong>Onde Ficar e Comer:</strong>
+            <ul>
+                <li>Hospedagem: Novo Hotel e Pousada das Gabirobas.</li>
+                <li>Restaurantes: Maestá Wine Bar, Santa Gula e O Bistekão.</li>
             </ul>
         </li>
     </ol>
