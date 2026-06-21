@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roncador - PR</title>
     <style>
         body {
@@ -9,142 +10,302 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            color: #333;
+        }
+
+        /* Container principal para centralizar o conteúdo do site */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h1 {
             text-align: center;
             background-color: #f4f4f4; 
-            color: #333;               
+            color: #333;              
             padding: 20px;            
             border-radius: 8px;       
             max-width: 600px;          
             margin: 20px auto;         
         }
 
-        h2, h3 {
+        h2, h3, h4 {
             text-align: center;
+            margin-top: 40px;
         }
 
         p {
-            text-align: center;
-            color: black;
+            text-align: justify;
             font-size: 18px;
-            max-width: 800px;
-            margin: 20px auto;
+            margin: 20px 0;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
+        /* Galeria de Imagens */
+        .gallery {
+            display: flex; 
+            gap: 15px; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .gallery img {
             max-width: 100%; 
             height: auto;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        /* Aplica o fundo cinza nas listas */
+        /* Listas */
         ul, ol {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffffff; /* Cinza claro */
-            padding: 30px 50px;       /* Espaçamento interno para não grudar no texto */
-            border-radius: 10px;      /* Bordas arredondadas para combinar com o layout */
+            background-color: #ffffff;
+            padding: 30px 50px;       
+            border-radius: 10px;      
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        /* Ajuste para as sublistas não acumularem fundo sobre fundo */
         ul ul, ol ul {
             background-color: transparent;
             margin: 10px 0;
             padding: 0 20px;
+            box-shadow: none;
+        }
+
+        /* Vídeo Centralizado */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        /* Tabela de Contatos */
+        table {
+            width: 100%;
+            margin: 30px 0;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 30%;
+            background-color: #fafafa;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Formulário de Cadastro */
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin: 40px 0;
+        }
+
+        .form-container h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .form-container p {
+            text-align: center;
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
 
-    <h1>RONCADOR</h1>
+    <div class="container">
 
-    <p>Por volta de 1920, uma comissão exploradora encarregada de demarcar a estrada que faria a ligação do Paraná ao Mato Grosso, instalou um acampamento onde hoje se localiza a sede do município de roncador. Com a derrubada das matas, foram surgindo as primeiras plantações, como também as criações de suínos.</p>
-    
-    <p>Dizem os pioneiros que em uma noite chuvosa ouvia-se ao longe o barulho produzido pelas copas dos pinheiros, e também um forte ronco produzido por uma queda D'água. O barulho era ouvido a quilômetros e, desta forma, denominaram o rio de Roncador e futuramente o nome da cidade passou a ser <strong><em>"RONCADOR".</em></strong></p>
+        <h1>RONCADOR</h1>
 
-    <p>A colonização de Roncador iniciou-se em 1923, com a chegada das primeiras famílias. Em 1927, foi construída a primeira estrada para carroças. Devido ao crescimento do vilarejo, em 1952, a congregação das irmãs Servas da Imaculada Virgem Maria abriu uma escola, cuja construção contou com ajuda de toda população.</p>
+        <p>Por volta de 1920, uma comissão exploradora encarregada de demarcar a estrada que faria a ligação do Paraná ao Mato Grosso, instalou um acampamento onde hoje se localiza a sede do município de Roncador. Com a derrubada das matas, foram surgindo as primeiras plantações, como também as criações de suínos.</p>
+        
+        <p>Dizem os pioneiros que em uma noite chuvosa ouvia-se ao longe o barulho produzido pelas copas dos pinheiros, e também um forte ronco produzido por uma queda D'água. O barulho era ouvido a quilômetros e, desta forma, denominaram o rio de Roncador e futuramente o nome da cidade passou a ser <strong><em>"RONCADOR".</em></strong></p>
 
-<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <img src="roncador.jpeg" alt="Imagem de Roncador" width="500" style="max-width: 100%; height: auto;">
-    <img src="escolaroncador.jpg" alt="Primeira Escola de Roncador" width="500" style="max-width: 100%; height: auto;">
-</div>
+        <p>A colonização de Roncador iniciou-se em 1923, com a chegada das primeiras famílias. Em 1927, foi construída a primeira estrada para carroças. Devido ao crescimento do vilarejo, em 1952, a congregação das irmãs Servas da Imaculada Virgem Maria abriu uma escola, cuja construção contou com ajuda de toda população.</p>
 
-    <h2>Curiosidades sobre Roncador:</h2>
+        <div class="gallery">
+            <img src="roncador.jpeg" alt="Imagem de Roncador" width="380">
+            <img src="escolaroncador.jpg" alt="Primeira Escola de Roncador" width="380">
+        </div>
 
-    <ul>
-        <li><strong>Origem e Primeiros Habitantes:</strong> A região já era frequentada por volta de 1920.</li>
-        <li><strong>Colonização (1923-1927):</strong> O início efetivo foi em 1923.</li>
-        <li><strong>Nomeação de Professores:</strong> Paulo Schneer foi o primeiro professor; Verônica Zola foi nomeada em 1944.</li>
-        <li><strong>Fundação/Emancipação:</strong> Oficialmente fundada como município em 1960.</li>
-        <li><strong>População Atual:</strong> Aproximadamente 11.300 habitantes.</li>
-    </ul>
+        <h2>Curiosidades sobre Roncador:</h2>
+        <ul>
+            <li><strong>Origem e Primeiros Habitantes:</strong> A região já era frequentada por volta de 1920.</li>
+            <li><strong>Colonização (1923-1927):</strong> O início efetivo foi em 1923.</li>
+            <li><strong>Nomeação de Professores:</strong> Paulo Schneer foi o primeiro professor; Verônica Zola foi nomeada em 1944.</li>
+            <li><strong>Fundação/Emancipação:</strong> Oficialmente fundada como município em 1960.</li>
+            <li><strong>População Atual:</strong> Aproximadamente 11.300 habitantes.</li>
+        </ul>
 
-    <h3>O QUE FAZER EM RONCADOR?</h3>
+        <h3>O QUE FAZER EM RONCADOR?</h3>
+        <ol>
+            <li><strong>Natureza e Aventura:</strong>
+                <ul>
+                    <li>Cachoeiras: Sassá, Rio Bonito e do Roncador.</li>
+                    <li>Caminhadas da Natureza: Eventos que exploram o Rio Roncador.</li>
+                    <li>Pedal dos Mestres: Trilha de bike de alta dificuldade.</li>
+                </ul>
+            </li>
+            <li><strong>Lazer e Turismo Rural:</strong>
+                <ul>
+                    <li>Pousada Parque das Gabirobas e Lago Municipal.</li>
+                    <li>Turismo Religioso: Igreja de São Pedro e São Nicolau.</li>
+                </ul>
+            </li>
+            <li><strong>Cultura e Gastronomia:</strong>
+                <ul>
+                    <li>Culinária Típica: Degustar o <strong>perohê</strong> ou <strong>vareneky</strong> (herança ucraniana).</li>
+                    <li>Eventos: Celebrações do CTG e Associação Vesná.</li>
+                </ul>
+            </li>
+            <li><strong>Onde Ficar e Comer:</strong>
+                <ul>
+                    <li>Hospedagem: Novo Hotel e Pousada das Gabirobas.</li>
+                    <li>Restaurantes: Maestá Wine Bar, Santa Gula e O Bistekão.</li>
+                </ul>
+            </li>
+        </ol>
 
-    <ol>
-        <li><strong>Natureza e Aventura:</strong>
-            <ul>
-                <li>Cachoeiras: Sassá, Rio Bonito e do Roncador.</li>
-                <li>Caminhadas da Natureza: Eventos que exploram o Rio Roncador.</li>
-                <li>Pedal dos Mestres: Trilha de bike de alta dificuldade.</li>
-            </ul>
-        </li>
-        <li><strong>Lazer e Turismo Rural:</strong>
-            <ul>
-                <li>Pousada Parque das Gabirobas e Lago Municipal.</li>
-                <li>Turismo Religioso: Igreja de São Pedro e São Nicolau.</li>
-            </ul>
-        </li>
-        <li><strong>Cultura e Gastronomia:</strong>
-            <ul>
-                <li>Culinária Típica: Degustar o <strong>perohê</strong> ou <strong>vareneky</strong> (herança ucraniana).</li>
-                <li>Eventos: Celebrações do CTG e Associação Vesná.</li>
-            </ul>
-        </li>
-        <li><strong>Onde Ficar e Comer:</strong>
-            <ul>
-                <li>Hospedagem: Novo Hotel e Pousada das Gabirobas.</li>
-                <li>Restaurantes: Maestá Wine Bar, Santa Gula e O Bistekão.</li>
-            </ul>
-        </li>
-    </ol>
+        <h4>Vídeo sobre a história de Roncador:</h4>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YU2yU1rTWfw?si=bkKgxBZ9ojRinGgD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-    <h4>Vídeo sobre a história de Roncador:</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YU2yU1rTWfw?si=bkKgxBZ9ojRinGgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <table>
-        <thead>
-            <tr>
-                <th colspan="2">Prefeitura Municipal de Roncador</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="label">Horário de Atendimento:</td>
-                <td>
-                    <strong>Manhã:</strong> 8:00h às 11:45h<br>
-                    <strong>Tarde:</strong> 13:15h às 17:30h
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Local:</td>
-                <td>Praça Moysés Lupion, 89 - Centro<br>CEP: 87320-000</td>
-            </tr>
-            <tr>
-                <td class="label">Ouvidoria:</td>
-                <td><a href="tel:08001150015">0800 115 0015</a></td>
-            </tr>
-            <tr>
-                <td class="label">E-mail:.</td>
-                <td><a href="mailto:ouvidoria@roncador.pr.gov.br">ouvidoria@roncador.pr.gov.br</a></td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Prefeitura Municipal de Roncador</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="label">Horário de Atendimento:</td>
+                    <td>
+                        <strong>Manhã:</strong> 8:00h às 11:45h<br>
+                        <strong>Tarde:</strong> 13:15h às 17:30h
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Local:</td>
+                    <td>Praça Moysés Lupion, 89 - Centro<br>CEP: 87320-000</td>
+                </tr>
+                <tr>
+                    <td class="label">Ouvidoria:</td>
+                    <td><a href="tel:08001150015">0800 115 0015</a></td>
+                </tr>
+                <tr>
+                    <td class="label">E-mail:</td>
+                    <td><a href="mailto:ouvidoria@roncador.pr.gov.br">ouvidoria@roncador.pr.gov.br</a></td>
+                </tr>
+            </tbody>
+        </table>
 
-    </body>
+        <div class="form-container">
+            <h3>Se você tiber algum fato interessante sobre o munícipio, conte aqui!</h3>
+            <p>(Espaço opcional para compartilhar fatos, memórias ou curiosidades sobre o município)</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail de contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="relato">Seu fato ou história:</label>
+                    <textarea id="relato" name="relato" placeholder="Escreva aqui o que você sabe ou viveu em Roncador..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Relato</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
 </html>
 
 
