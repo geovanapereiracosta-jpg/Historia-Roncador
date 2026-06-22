@@ -1,5 +1,58 @@
 <style>
+<head>
+/* Remove margens padrão e define a fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* Configuração do Cabeçalho (Fixo no topo) */
+.cabecalho {
+    background-color: #222; /* Cor de fundo */
+    width: 100%;
+    position: fixed; /* Fixa o topo */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* Separa o logo dos links */
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilização do Logo */
+.cabecalho .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilização da Navegação */
+.cabecalho .menu-navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.cabecalho .menu-navegacao ul li {
+    margin-left: 30px;
+}
+
+.cabecalho .menu-navegacao ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.cabecalho .menu-navegacao ul li a:hover {
+    color: #fff;
+}
+<head/>
   
   body {
     background-color: rgb(255, 255, 255);
@@ -82,3 +135,4 @@
         a:hover {
             text-decoration: underline;
         }
+
