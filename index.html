@@ -432,76 +432,140 @@
     }
 </script>
 
-  <table
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodapé Prefeitura de Roncador</title>
+    <style>
+        /* Estilização Geral do Rodapé */
+        .site-footer {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            border-top: 3px solid #0056b3; /* Linha azul de destaque */
+            margin-top: 40px;
+        }
 
-            <thead>
+        /* Container que divide as informações da imagem */
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
 
-                <tr>
+        /* Ajustes da Tabela de Informações */
+        .footer-table {
+            border-collapse: collapse;
+            max-width: 700px;
+            flex: 1;
+            min-width: 300px;
+        }
 
-                    <th colspan="2">Prefeitura Municipal de Roncador</th>
+        .footer-table th {
+            font-size: 1.2rem;
+            color: #0056b3;
+            text-align: left;
+            padding-bottom: 15px;
+        }
 
-                </tr>
+        .footer-table td {
+            padding: 8px 12px 8px 0;
+            vertical-align: top;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
 
-            </thead>
+        .footer-table .label {
+            font-weight: bold;
+            color: #555;
+            white-space: nowrap;
+            width: 180px;
+        }
 
-            <tbody>
+        .footer-table a {
+            color: #0056b3;
+            text-decoration: none;
+        }
 
-                <tr>
+        .footer-table a:hover {
+            text-decoration: underline;
+        }
 
-                    <td class="label">Horário de Atendimento:</td>
+        /* Lado Direito: Área do Logo */
+        .footer-logo-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            min-width: 250px;
+        }
 
-                    <td>
+        .footer-logo {
+            max-width: 200px;
+            height: auto;
+            object-fit: contain;
+        }
 
-                        <strong>Manhã:</strong> 8:00h às 11:45h<br>
+        /* Direitos Autorais / Barra Inferior */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85rem;
+            color: #777;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
 
-                        <strong>Tarde:</strong> 13:15h às 17:30h
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <table class="footer-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Prefeitura Municipal de Roncador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="label">Horário de Atendimento:</td>
+                        <td>
+                            <strong>Manhã:</strong> 8:00h às 11:45h<br>
+                            <strong>Tarde:</strong> 13:15h às 17:30h
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Local:</td>
+                        <td>Praça Moysés Lupion, 89 - Centro<br>CEP: 87320-000</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Ouvidoria:</td>
+                        <td><a href="tel:08001150015">0800 115 0015</a></td>
+                    </tr>
+                    <tr>
+                        <td class="label">E-mail:</td>
+                        <td><a href="mailto:ouvidoria@roncador.pr.gov.br">ouvidoria@roncador.pr.gov.br</a></td>
+                    </tr>
+                </tbody>
+            </table>
 
-                    </td>
+            <div class="footer-logo-wrapper">
+                <img src="prefeitura.png" alt="Logo do Rodapé" class="footer-logo">
+            </div>
 
-                </tr>
+        </div>
 
-                <tr>
-
-                    <td class="label">Local:</td>
-
-                    <td>Praça Moysés Lupion, 89 - Centro<br>CEP: 87320-000</td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="label">Ouvidoria:</td>
-
-                    <td><a href="tel:08001150015">0800 115 0015</a></td>
-
-                </tr>
-
-                <tr>
-
-                 <footer>
-
-    <div class="footer-container">
-
-        <img src="prefeitura.png" alt="Logo do Rodapé" class="footer-logo">
-
-    </div>
-
-</footer>
-
-                    <td class="label">E-mail:</td>
-
-                    <td><a href="mailto:ouvidoria@roncador.pr.gov.br">ouvidoria@roncador.pr.gov.br</a></td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-
-
-</body>
-
-</html> 
-
-
+        <div class="footer-bottom">
+            &copy; 2026 Prefeitura Municipal de Roncador - Todos os direitos reservados.
+        </div>
+    </footer>
+    </body>
+</html>
