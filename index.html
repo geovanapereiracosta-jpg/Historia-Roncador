@@ -430,10 +430,7 @@
             elementoNoHtml.remove();
         }
     }
-</script>
-
-  <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodapé Prefeitura de Roncador</title>
     <style>
@@ -441,15 +438,15 @@
         .site-footer {
             background-color: #f8f9fa;
             color: #333;
-            padding: 30px 20px;
+            padding: 15px 40px; /* Reduzido em cima/baixo e aumentado nas laterais */
             font-family: Arial, sans-serif;
-            border-top: 3px solid #28a745; /* Linha azul de destaque */
+            border-top: 3px solid #28a745; 
             margin-top: 40px;
         }
 
-        /* Container que divide as informações da imagem */
+        /* Container ocupando a largura total */
         .footer-container {
-            max-width: 1200px;
+            max-width: 100%; /* Tornou o rodapé mais largo, ocupando a tela toda */
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
@@ -470,14 +467,14 @@
             font-size: 1.2rem;
             color: #28a745;
             text-align: left;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
         }
 
         .footer-table td {
-            padding: 8px 12px 8px 0;
+            padding: 6px 12px 6px 0; /* Diminuído ligeiramente para deixar mais baixo */
             vertical-align: top;
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .footer-table .label {
@@ -506,7 +503,7 @@
         }
 
         .footer-logo {
-            max-width: 200px;
+            max-width: 350px; /* Tamanho da imagem aumentado para 350px */
             height: auto;
             object-fit: contain;
         }
@@ -514,8 +511,8 @@
         /* Direitos Autorais / Barra Inferior */
         .footer-bottom {
             text-align: center;
-            margin-top: 30px;
-            padding-top: 15px;
+            margin-top: 15px; /* Reduzido para achatar o rodapé */
+            padding-top: 10px;
             border-top: 1px solid #e0e0e0;
             font-size: 0.85rem;
             color: #777;
@@ -567,5 +564,5 @@
             &copy; 2026 Prefeitura Municipal de Roncador - Todos os direitos reservados.
         </div>
     </footer>
-    </body>
+</body>
 </html>
