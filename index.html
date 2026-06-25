@@ -313,7 +313,6 @@
                 </div>
         </div>
 
-<<<<<<< HEAD
     </div> <style>
         /* Estilos extras para o botão de deletar se integrar ao layout */
         .comment-card {
@@ -339,7 +338,7 @@
             background-color: #cc0000;
         }
     </style>
-======
+
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -356,44 +355,17 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-bottom: 30px;
         }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
-
-<<<<<<< HEAD
     <script>
         // Carrega os comentários do localStorage assim que a página abre
         document.addEventListener("DOMContentLoaded", carregarComentarios);
-=======
-        .form-group {
-            margin-bottom: 15px;
-        }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
         document.getElementById('storyForm').addEventListener('submit', function(event) {
             event.preventDefault();
-=======
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             let nomeInput = document.getElementById('nome').value.trim();
             let relatoInput = document.getElementById('relato').value.trim();
             let nomeAutor = nomeInput ? nomeInput : "Anônimo";
-=======
-        input[type="text"], textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Cria um objeto para o comentário com um ID único baseado no tempo
             let idUnico = Date.now();
             let objetoComentario = {
@@ -401,119 +373,32 @@
                 nome: nomeAutor,
                 texto: relatoInput
             };
-=======
-        button[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Renderiza na tela
             criarElementoComentario(objetoComentario);
-=======
-        button[type="submit"]:hover {
-            background-color: #0056b3;
-        }
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Salva no LocalStorage
             salvarNoStorage(objetoComentario);
-=======
-        /* Seus estilos extras para o botão de deletar e card */
-        .comment-card {
-            position: relative;
-            padding: 15px;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            background: white;
-        }
-        .btn-delete {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ff4d4d;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-        .btn-delete:hover {
-            background-color: #cc0000;
-        }
-        .comment-author {
-            margin-bottom: 5px;
-        }
-        .comment-text {
-            margin: 0;
-            padding-right: 60px; /* Evita que o texto fique por baixo do botão */
-        }
-    </style>
-</head>
-<body>
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Limpa o formulário
             document.getElementById('storyForm').reset();
         });
-=======
-    <form id="storyForm">
-        <h2>Deixe seu Relato</h2>
-        
-        <div class="form-group">
-            <label for="nome">Nome (Opcional):</label>
-            <input type="text" id="nome" placeholder="Seu nome ou apelido">
-        </div>
-        
-        <div class="form-group">
-            <label for="relato">Relato:</label>
-            <textarea id="relato" rows="4" placeholder="Digite sua história aqui..." required></textarea>
-        </div>
-        
-        <button type="submit">Enviar Relato</button>
-    </form>
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
         // Função responsável por construir o HTML do comentário
         function criarElementoComentario(comentario) {
             let novoComentario = document.createElement('div');
             novoComentario.className = 'comment-card';
             novoComentario.setAttribute('data-id', comentario.id);
-=======
-    <div id="commentsContainer"></div>
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             let estruturaNome = document.createElement('div');
             estruturaNome.className = 'comment-author';
             estruturaNome.style.fontWeight = 'bold';
             estruturaNome.innerText = comentario.nome;
-=======
-    <script>
-        // Carrega os comentários do localStorage assim que a página abre
-        document.addEventListener("DOMContentLoaded", carregarComentarios);
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             let estruturaTexto = document.createElement('p');
             estruturaTexto.className = 'comment-text';
             estruturaTexto.innerText = comentario.texto;
-=======
-        document.getElementById('storyForm').addEventListener('submit', function(event) {
-            event.preventDefault();
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Criação do botão de deletar
             let botaoDeletar = document.createElement('button');
             botaoDeletar.className = 'btn-delete';
@@ -521,42 +406,21 @@
             botaoDeletar.onclick = function() {
                 excluirComentario(comentario.id);
             };
-=======
-            let nomeInput = document.getElementById('nome').value.trim();
-            let relatoInput = document.getElementById('relato').value.trim();
-            let nomeAutor = nomeInput ? nomeInput : "Anônimo";
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             // Junta tudo
             novoComentario.appendChild(estruturaNome);
             novoComentario.appendChild(estruturaTexto);
             novoComentario.appendChild(botaoDeletar);
-=======
-            // Cria um objeto para o comentário com um ID único baseado no tempo
-            let idUnico = Date.now();
-            let objetoComentario = {
-                id: idUnico,
-                nome: nomeAutor,
-                texto: relatoInput
-            };
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
             let containerComentarios = document.getElementById('commentsContainer');
             containerComentarios.insertBefore(novoComentario, containerComentarios.firstChild);
         }
-=======
-            // Renderiza na tela
-            criarElementoComentario(objetoComentario);
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
 
-<<<<<<< HEAD
         // Função para salvar a lista atualizada no navegador
         function salvarNoStorage(comentario) {
             let comentariosExistentes = JSON.parse(localStorage.getItem('relatosRoncador')) || [];
             comentariosExistentes.push(comentario);
-=======
+
             // Salva no LocalStorage
             salvarNoStorage(objetoComentario);
 
@@ -628,17 +492,9 @@
                 elementoNoHtml.remove();
             }
         }
-<<<<<<< HEAD
     </script>
 
     <meta charset="UTF-8">
-=======
-    </script>
-</body>
-</html>
-
-<meta charset="UTF-8">
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodapé Prefeitura de Roncador</title>
     <style>
