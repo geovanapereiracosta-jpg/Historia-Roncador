@@ -600,7 +600,6 @@
         function salvarNoStorage(comentario) {
             let comentariosExistentes = JSON.parse(localStorage.getItem('relatosRoncador')) || [];
             comentariosExistentes.push(comentario);
->>>>>>> 247e7572412b08e981f79e54cc8bd9690256480e
             localStorage.setItem('relatosRoncador', JSON.stringify(comentariosExistentes));
         }
 
